@@ -47,9 +47,9 @@ public class HandleDate {
             sb.append(org.apache.commons.lang3.StringUtils.leftPad(number + "", 2, "0"));
         });
         sb.append(reds.toArray()[0]);
-        System.out.println(sb.toString());
+
         jedis.select(1);
-        if (!jedis.exists(sb.toString())) {
+        if (!jedis.exists(sb.toString()) && reds.contains(11)) {
             System.out.println("blues:" + list);
             System.out.println("red:" + reds);
         } else {

@@ -1,2 +1,6 @@
 # Project exclude paths
 /generate/target/
+
+ssq.iml
+ssq.txt
+/.idea/
